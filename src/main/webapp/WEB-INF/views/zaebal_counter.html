@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Zaebal Counter</title>
+</head>
+<body>
+<h2>Заебал счётчик</h2>
+<p th:text="${name}">zaebalName</p>
+
+<p th:text="${zaebalCounter.get(${name})}"></p>
+<p th:text="${zaebalCounter.get(name)}"></p>
+<p th:text="${zaebalCounter[__${name}__]}"></p>
+
+</tr>
+</body>
+</html>
